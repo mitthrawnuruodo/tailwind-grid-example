@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Grid Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen font-special">
+  <!-- Header -->
+  <header
+  class="bg-blue-600 text-white p-4 bg-cover bg-center"
+  style="background-image: url('https://fakeimg.pl/1080x48/bbbbdd/909090');"
+  >
+    <h1 class="text-3xl font-bold text-center">My Awesome Website</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow bg-gray-100 p-8 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Left Sidebar -->
+      <aside class="bg-white p-4 shadow-md border rounded-lg">
+        <h2 class="text-xl font-semibold mb-4">Navigation</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-blue-600 hover:underline">Home</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">About</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Services</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Contact</a></li>
+        </ul>
+      </aside>
+      <!-- Main Content -->
+      <section class="bg-white p-4 shadow-md border rounded-lg md:col-span-2 text-justify">
+        <h2 class="text-2xl font-bold mb-4 text-center">Welcome to My Website</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Vivamus lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Cras venenatis euismod malesuada. Nullam ac erat ante.
+        </p>
+        <button class="bg-green-600 text-white px-4 py-2 rounded border-2 border-green-600 hover:bg-white hover:text-green-600">
+          Learn More
+        </button>
+
+        <!-- Image with hover effect -->
+        <img
+          src="https://fakeimg.pl/960x640/aaeeaa/909090" alt="Sample Image"
+          class="mt-4 w-full h-auto rounded-lg transform hover:scale-105 transition-transform duration-500"
+        >
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 p-4 fixed bottom-0 w-full">
+    <p class="text-center">© 2024 My Awesome Website</p>
+  </footer>
+</body>
+</html>
